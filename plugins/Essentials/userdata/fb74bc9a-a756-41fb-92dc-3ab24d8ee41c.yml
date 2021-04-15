@@ -1,0 +1,28 @@
+lastAccountName: BU_Joker
+timestamps:
+  login: 1618439271489
+  logout: 1618441969716
+  lastteleport: 1618440867487
+ipAddress: 185.194.110.240
+lastlocation:
+  world: world
+  x: -1082.1226676788788
+  y: 69.0
+  z: -604.1226748290462
+  yaw: -339.0942
+  pitch: 68.09946
+logoutlocation:
+  world: world
+  x: -1016.0971667872134
+  y: 67.0
+  z: -634.6937797345759
+  yaw: 46.631958
+  pitch: 0.45016208
+homes:
+  home:
+    world: world
+    x: -1051.4558977953718
+    y: 68.0
+    z: -646.3232436109279
+    yaw: 342.0735
+    pitch: 14.099505

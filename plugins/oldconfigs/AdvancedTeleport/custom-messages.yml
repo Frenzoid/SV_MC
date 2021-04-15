@@ -1,0 +1,272 @@
+###############################################################################
+#                          -<( AdvancedTeleport )>-                           #
+#                     Made by Niestrat99 and Thatsmusic99                     #
+#                                                                             #
+###############################################################################
+Teleport:
+  eventBeforeTP: '&b↑ &8» &7Teleporting in &b{countdown} seconds&7, please do not
+    move!'
+  # This is an example use for titles and subtitles in the plugin.
+  # This feature is supported only if you're on version 1.8.8 or newer.
+  eventBeforeTP_title:
+    length: 80
+    fade-in: 0
+    fade-out: 10
+    '0': '&7&lTeleporting...'
+    '20': '&b> &7&lTeleporting... &b<'
+    '40': '&b>> &7&lTeleporting... &b<<'
+    '60': '&b>>> &e&lTeleported! &b<<<'
+  eventBeforeTP_subtitle:
+    '0': '&bPlease do not move!'
+    '60': ''
+  eventBeforeTPMovementAllowed: '&b↑ &8» &7Teleporting in &b{countdown} seconds&7!'
+  eventTeleport: '&b↑ &8» &7Teleporting...'
+  eventMovement: '&b↑ &8» &7Teleport has been cancelled due to movement.'
+  eventMovement_title:
+    length: 60
+    fade-in: 0
+    fade-out: 10
+    '0': '&e&l! &c&lCancelled &e&l!'
+  teleportingToSpawn: '&b↑ &8» &7Teleporting you to spawn!'
+  teleporting: '&b↑ &8» &7Teleporting to &b{player}&7!'
+  teleportingToHome: '&b↑ &8» &7Teleporting to &b{home}&7!'
+  teleportingToHomeOther: '&b↑ &8» &7Teleporting to &b{player}&7''s home, &b{home}&7!'
+  teleportingToWarp: '&b↑ &8» &7Teleporting you to &b{warp}&7!'
+  teleportingPlayerToSelf: '&b↑ &8» &7Teleporting &b{player} &7to you!'
+  teleportingSelfToPlayer: '&b↑ &8» &7Teleporting you to &b{player}&7!'
+  teleportingToRandomPlace: '&b↑ &8» &7Teleporting you to a random place!'
+  teleportingToLastLoc: '&b↑ &8» &7Teleporting to your last location!'
+  teleportedToOfflinePlayer: '&b↑ &8» &7Teleported to offline player &b{player}&7!'
+  teleportedOfflinePlayerHere: '&b↑ &8» &7Teleported offline player &b{player} &7to
+    your location!'
+Error:
+  noPermission: '&b↑ &8» &7You do not have permission to use this command!'
+  noPermissionSign: '&b↑ &8» &7You do not have permission to make this sign!'
+  featureDisabled: '&b↑ &8» &7This feature has been disabled!'
+  noRequests: '&b↑ &8» &7You do not have any pending requests!'
+  tpOff: '&b↑ &8» &b{player} &7has their teleportation disabled!'
+  tpBlock: '&b↑ &8» &b{player} &7has blocked you from sending requests to them!'
+  alreadyOn: '&b↑ &8» &7Your teleport requests are already enabled!'
+  alreadyOff: '&b↑ &8» &7Your teleport requests are already disabled!'
+  alreadyBlocked: '&b↑ &8» &7This player is already blocked!'
+  neverBlocked: '&b↑ &8» &7This player was never blocked!'
+  onCooldown: '&b↑ &8» &7Please wait another &b{time} &7seconds to use this command!'
+  requestSentToSelf: '&b↑ &8» &7You can''t send a request to yourself!'
+  noSuchPlayer: '&b↑ &8» &7The player is either currently offline or doesn''t exist!'
+  alreadySentRequest: '&b↑ &8» &7You''ve already sent a request to &7{player}&b!'
+  notEnoughEXP: |-
+    &b↑ &8» &7You do not have enough EXP Levels to teleport there!
+    &b↑ &8» &7You need at least &b{levels} &7EXP levels!
+  notEnoughEXPPoints: |-
+    &b↑ &8» &7You do not have enough EXP Points to teleport there!
+    &b↑ &8» &7You need at least &b{points} &7EXP points!
+  notEnoughMoney: |-
+    &b↑ &8» &7You do not have enough money to teleport there!
+    &b↑ &8» &7You need at least &b${amount}&7!
+  requestExpired: '&b↑ &8» &7Your teleport request to &b{player} &7has expired!'
+  noPlayerInput: '&b↑ &8» &7You must include a player name!'
+  blockSelf: '&b↑ &8» &7You can''t block yourself!'
+  noRequestsFromPlayer: '&b↑ &8» &7You don''t have any pending requests from &b{player}&7!'
+  invalidPageNo: '&b↑ &8» &7You''ve inserted an invalid page number!'
+  noHomeInput: '&b↑ &8» &7You have to include a home name!'
+  noSuchHome: '&b↑ &8» &7This home doesn''t exist!'
+  noBedHome: '&b↑ &8» &7You don''t have any bed spawn set!'
+  noBedHomeOther: '&b↑ &8» &b{player} &7doesn''t have a bed spawn set!'
+  reachedHomeLimit: '&b↑ &8» &7You can''t set any more homes!'
+  homeAlreadySet: '&b↑ &8» &7You already have a home called &b{home}&7!'
+  noWarpInput: '&b↑ &8» &7You have to include the warp''s name!'
+  noSuchWarp: '&b↑ &8» &7That warp doesn''t exist!'
+  noSuchWorld: '&b↑ &8» &7That world doesn''t exist!'
+  noLocation: '&b↑ &8» &7You don''t have any location to teleport back to!'
+  notAPlayer: '&b↑ &8» &7You must be a player to run this command!'
+  noHomes: '&b↑ &8» &7You haven''t got any homes!'
+  noHomesOtherPlayer: '&b↑ &8» &b{player} &7hasn''t got any homes!'
+  tooFarAway: '&b↑ &8» &7The teleport destination is too far away so you can not teleport
+    there!'
+  noRequestsSent: '&b↑ &8» &7Couldn''t send a request to anyone :('
+  onCountdown: '&b↑ &8» &7You can''t use this command whilst waiting to teleport!'
+  noPermissionWarp: '&b↑ &8» &7You can''t warp to &b{warp}&7!'
+  cantTPToWorld: '&b↑ &8» &7You can''t randomly teleport in that world!'
+  cantTPToWorldLim: '&b↑ &8» &7You can''t teleport to &b{world}&7!'
+  tooFewArguments: '&b↑ &8» &7Too few arguments!'
+  invalidArgs: '&b↑ &8» &7Invalid arguments!'
+  cantTPToPlayer: '&b↑ &8» &7You can''t request a teleportation to &b{player}&7!'
+  noWarps: '&b↑ &8» &7There are no warps as of currently!'
+  noAccessHome: '&b↑ &8» &7You cannot access &b{home}&7 as of currently!'
+  moveHomeFail: '&b↑ &8» &7The home has been moved but the data has not been stored
+    successfully. The plugin will try to fix this itself.'
+  setMainHomeFail: '&b↑ &8» &7The main home has been set but the data has not been
+    stored successfully. The plugin will try to fix this itself.'
+  deleteHomeFail: '&b↑ &8» &7The home has been deleted but the data has not been stored
+    successfully. The plugin will try to fix this itself.'
+  setHomeFail: '&b↑ &8» &7The home has been set but the data has not been stored successfully.
+    The plugin will try to fix this itself.'
+  deleteWarpFail: '&b↑ &8» &7The warp has been set but the data has not been stored
+    successfully. The plugin will try to fix this itself.'
+  homesNotLoaded: '&b↑ &8» &7Homes for this player haven''t loaded yet, please wait
+    a little bit (even just a second) before trying this again!'
+  noOfflineLocation: '&b↑ &8» &7No offline location was found for &b{player}&7!'
+  failedOfflineTeleport: '&b↑ &8» &7Failed to teleport to offline player &b{player}&7!'
+  failedOfflineTeleportHere: '&b↑ &8» &7Failed to teleport offline player &b{player}
+    &7 to your location!'
+  alreadySearching: '&b↑ &8» &7Already searching for a location to teleport to!'
+Info:
+  tpOff: '&b↑ &8» &7Successfully disabled teleport requests!'
+  tpOn: '&b↑ &8» &7Successfully enabled teleport requests!'
+  tpAdminOff: '&b↑ &8» &7Successfully disabled teleport requests for &b{player}&7!'
+  tpAdminOn: '&b↑ &8» &7Successfully enabled teleport requests for &b{player}&7!'
+  requestSent: |-
+    &b↑ &8» &7Successfully sent request to &b{player}&7!
+    &b↑ &8» &7They've got &b{lifetime} &7to respond!
+    &7To cancel the request use &b/tpcancel &7to cancel it.
+
+                                    [&7&l[CANCEL]](/tpcancel {player})
+    &7
+  tpaRequestReceived: |-
+    &b↑ &8» &7The player &b{player} &7wants to teleport to you!
+    &b↑ &8» &7If you want to accept it, use &b/tpayes&7, but if not, use &b/tpano&7.
+    &b↑ &8» &7You've got &b{lifetime} &7to respond to it!
+
+                       [&a&l[ACCEPT]](/tpayes {player}|&aClick here to accept the request.)              [&c&l[DENY]](/tpano {player}|&cClick here to deny the request.)
+    &7
+  tpaRequestHere: |-
+    &b↑ &8» &7The player &b{player} &7wants to teleport you to them!
+    &b↑ &8» &7If you want to accept it, use &b/tpayes&7, but if not, use &b/tpano&7.
+    &b↑ &8» &7You've got &b{lifetime} seconds &7to respond to it!
+
+                       [&a&l[ACCEPT]](/tpayes {player}|&aClick here to accept the request.)              [&c&l[DENY]](/tpano {player}|&cClick here to deny the request.)
+    &7
+  blockPlayer: '&b↑ &8» &b{player} &7has been blocked.'
+  tpCancel: '&b↑ &8» &7You have cancelled your teleport request.'
+  tpCancelResponder: '&b↑ &8» &b{player} &7has cancelled their teleport request.'
+  multipleRequestsCancel: '&b↑ &8» &7You have multiple teleport requests pending!
+    Click one of the following to cancel:'
+  multipleRequestsIndex: '&b> {player}'
+  multipleRequestsList: '&b↑ &8» &7Do /tpalist <Page Number> To check other requests.'
+  multipleRequestAccept: '&b↑ &8» &7You have multiple teleport requests pending! Click
+    one of the following to accept:'
+  multipleRequestDeny: '&b↑ &8» &7You have multiple teleport requests pending! Click
+    one of the following to deny:'
+  requestDeclined: '&b↑ &8» &7You''ve declined the teleport request!'
+  requestDeclinedResponder: '&b↑ &8» &b{player} &7has declined your teleport request!'
+  requestDisplaced: '&b↑ &8» &7Your request has been cancelled because &b{player}
+    &7got another request!'
+  deletedHome: '&b↑ &8» &7Successfully deleted the home &b{home}&7!'
+  deletedHomeOther: '&b↑ &8» &7Successfully deleted the home &b{home} &7for &b{player}&7!'
+  setHome: '&b↑ &8» &7Successfully set the home &b{home}&7!'
+  setHomeOther: '&b↑ &8» &7Successfully set the home &b{home} &7for &b{player}&7!'
+  setSpawn: '&b↑ &8» &7Successfully set the spawnpoint!'
+  setWarp: '&b↑ &8» &7Successfully set the warp &b{warp}&7!'
+  deletedWarp: '&b↑ &8» &7Successfully deleted the warp &b{warp}&7!'
+  searching: '&b↑ &8» &7Searching for a location...'
+  unblockPlayer: '&b↑ &8» &7Successfully unblocked &b{player}&7!'
+  reloadingConfig: '&b↑ &8» &7Reloading &bAdvancedTeleport&7''s config...'
+  reloadedConfig: '&b↑ &8» &7Finished reloading the config!'
+  warps: '&b&lWarps &8» &r'
+  homes: '&b&lHomes &8» &r'
+  homesOther: '&b&l{player}''s homes &8» &r'
+  requestAccepted: '&b↑ &8» &7You''ve accepted the teleport request!'
+  requestAcceptedResponder: '&b↑ &8» &b{player} &7has accepted the teleport request!'
+  paymentVault: '&b↑ &8» &7You have paid &b${amount} &7and now have &b${balance}&7!'
+  paymentEXP: '&b↑ &8» &7You have paid &b{amount} EXP Levels &7and now have &b{levels}
+    &7levels!'
+  paymentPoints: '&b↑ &8» &7You have paid &b{amount} EXP Points &7and now have &b{points}
+    &7points!'
+  createdWarpSign: '&b↑ &8» &7Successfully created the warp sign!'
+  createdRTPSign: '&b↑ &8» &7Successfully created the RandomTP sign!'
+  createdSpawnSign: '&b↑ &8» &7Successfully created the spawn sign!'
+  tpallRequestSent: '&b↑ &8» &7Successfully sent a teleport request to &b{amount}
+    &7player(s)!'
+  teleportedToLoc: '&b↑ &8» &7Successfully teleported you to &b{x}&7, &b{y}&7, &b{z}&7!
+    (Yaw: &b{yaw}&7, Pitch: &b{pitch}&7, World: &b{world}&7)'
+  teleportedToLocOther: '&b↑ &8» &7Successfully teleported &b{player} &7to &b{x}&7,
+    &b{y}&7, &b{z}&7! (Yaw: &b{yaw}&7, Pitch: &b{pitch}&7, World: &b{world}&7)'
+  movedWarp: '&b↑ &8» &7Moved &b{warp} &7to your current location!'
+  movedHome: '&b↑ &8» &7Moved home &b{home} &7to your current location!'
+  movedHomeOther: '&b↑ &8» &7Moved &b{player}''s &7home &b{home} &7to your location!'
+  setMainHome: '&b↑ &8» &7Made &b{home} &7your main home!'
+  setAndMadeMainHome: '&b↑ &8» &7Set &b{home} &7at your current location and made
+    it your main home!'
+  setMainHomeOther: '&b↑ &8» &7Made &b{home} {player}''s &7main home!'
+  setAndMadeMainHomeOther: '&b↑ &8» &7Set &b{home} &7for &b{player} &7at your current
+    location and made it their main home!'
+Tooltip:
+  homes: '&b↑ &8» &7Teleports you to your home: &b{home}'
+  warps: '&b↑ &8» &7Teleports you to warp: &b{warp}'
+  location: |2-
+
+    &bX &8» &7{x}
+    &bY &8» &7{y}
+    &bZ &8» &7{z}
+    &bWorld &8» &7{world}
+Help:
+  mainHelp:
+  - '&b&lAdvancedTeleport Help'
+  - '&6Please type &b/athelp <category> &6to get a list of commands about this category.'
+  - '&6--[ &bCategories &6]--'
+  - '&6- Teleport'
+  - '&6- Warps'
+  - '&6- Spawn'
+  - '&6- RandomTP'
+  - '&6- HomesCommand'
+  mainHelpAdmin:
+  - '&6- Admin'
+  teleport:
+  - '&b&lTeleport help'
+  - '&6- /tpa <player> - Sends a request to teleport to the player.'
+  - '&6- /tpahere <player> - Sends a request to the player to teleport to you'
+  - '&6- /tpaccept - Accepts a player''s teleport request.'
+  - '&6- /tpdeny - Declines a player''s teleport request.'
+  - '&6- /tpcancel - Lets you cancel the request you have sent to a player.'
+  - '&6- /toggletp - Lets you switch between /tpon and /tpoff.'
+  - '&6- /tpon - Enables teleport requests to you.'
+  - '&6- /tpoff - Disables teleport requests to you.'
+  - '&6- /tpblock <player> - Blocks the player so that they cannot send you teleport
+    requests anymore.'
+  - '&6- /tpunblock <player> - Unblocks the player so that they can send you teleport
+    requests.'
+  - '&6- /back - Teleports you to your last location.'
+  - '&6- /tpalist - Lists your teleport requests.'
+  teleportAdmin:
+  - '&6- /tpo <player> - Instantly teleports you to the player.'
+  - '&6- /tpohere <player> - Instantly teleports the player to you.'
+  - '&6- /tpall - Sends a teleport request to every online player to teleport to you.'
+  - '&6- /tploc <x|~> <y|~> <z|~> [Yaw|~] [Pitch|~] [World|~] [Player] [precise|noflight]
+    - Teleports you or another player to a specified location.'
+  - '&6- /tpoffline <player> - Teleports to an offline player.'
+  - '&6- /tpofflinehere <player> - Teleports an offline player to you.'
+  warps:
+  - '&b&lWarps help'
+  - '&6- /warp <Warp> - Teleports you to an existing warp point.'
+  - '&6- /warps - Gives you a list of warps.'
+  warpsAdmin:
+  - '&6- /setwarp <Name> - Sets a warp at a given location.'
+  - '&6- /delwarp <Warp> - Deletes a warp.'
+  - '&6- /movewarp <Warp> - Moves a warp to your location.'
+  spawn:
+  - '&b&lSpawn help'
+  - '- /spawn - Teleports you to the spawn point.'
+  spawnAdmin:
+  - '&6- /setspawn - Sets a spawn point at your location.'
+  randomTP:
+  - '&b&lRandomTP help'
+  - '&6- /rtp - Teleports you to a random location.'
+  homes:
+  - '&b&lHomes help'
+  - '&6- /sethome <Home> - Sets a home point at your location.'
+  - '&6- /delhome <Home> - Deletes a home point you''ve set.'
+  - '&6- /home <Home> - Teleports you to your home.'
+  - '&6- /homes - Gives you a list of homes you''ve set.'
+  - '&6- /movehome <Home> - Moves one of your homes to your current location.'
+  - '&6- /setmainhome <Home> - Sets a home at your location or makes an existing one
+    your main home.'
+  homesAdmin:
+  - '&6- /sethome <player> <home name> - Sets a home point at your location for the
+    player.'
+  - '&6- /delhome <player> <home name> - Deletes a home point of a player.'
+  - '&6- /home <player> <home name> - Teleports you to a home point a player has set.'
+  - '&6- /homes <player> - Gives you a list of homes of a player.'
+  admin:
+  - '&b&lAdmin help'
+  - '&6- /atinfo - Shows informations about this plugin.'
+  - '&6- /atreload - Reloads all configuration files of this plugin.'

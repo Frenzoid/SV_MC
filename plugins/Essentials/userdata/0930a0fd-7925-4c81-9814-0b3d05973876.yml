@@ -1,0 +1,28 @@
+lastAccountName: Bringdown_
+timestamps:
+  login: 1618515352812
+  lastteleport: 1618510588876
+  logout: 1618515925499
+ipAddress: 24.190.34.52
+homes:
+  home:
+    world: world
+    x: 814.5550506461115
+    y: 69.875
+    z: 4288.9914504377575
+    yaw: 356.4727
+    pitch: 20.03567
+lastlocation:
+  world: world
+  x: -0.10785767681118123
+  y: 64.0
+  z: 1.2166549525680674
+  yaw: 29.720095
+  pitch: 9.254364
+logoutlocation:
+  world: world
+  x: 8624.98679354265
+  y: 81.0
+  z: -8258.132834174321
+  yaw: -317.35034
+  pitch: 14.759266

@@ -1,0 +1,29 @@
+lastAccountName: Nezziii
+timestamps:
+  login: 1618512539040
+  logout: 1618514915949
+  lastteleport: 1618513645066
+ipAddress: 75.130.254.193
+logoutlocation:
+  world: world
+  x: 5394.306989604811
+  y: 67.0
+  z: 7783.0967714081435
+  yaw: 357.97998
+  pitch: 2.7001514
+lastlocation:
+  world: world
+  x: -948.2952210734537
+  y: 109.16455858982984
+  z: -556.423921284786
+  yaw: 88.96411
+  pitch: 4.9503803
+homes:
+  home:
+    world: world
+    x: 5385.59075410702
+    y: 66.0
+    z: 7763.699999988079
+    yaw: 286.84174
+    pitch: 12.225939
+godmode: false
