@@ -1,0 +1,28 @@
+lastAccountName: Josepi_
+timestamps:
+  login: 1619395551183
+  lastteleport: 1619370366324
+  logout: 1619395620243
+ipAddress: 76.14.150.206
+lastlocation:
+  world: world
+  x: -1749.300000011921
+  y: 40.0
+  z: -8323.300000011921
+  yaw: 120.49231
+  pitch: 17.999897
+logoutlocation:
+  world: world
+  x: -1671.7716621979669
+  y: 63.875
+  z: -8339.498464356788
+  yaw: 90.875854
+  pitch: 29.399994
+homes:
+  home:
+    world: world
+    x: -1673.744062067992
+    y: 64.0
+    z: -8344.573817884522
+    yaw: 62.99872
+    pitch: 36.149746

@@ -1,2 +1,4 @@
 &6Welcome, {PLAYER}&6!
 &6Players online:&c {ONLINE} &6
+&ADon't forget to check out our page at: &6
+&Ahttps://oldbox.cloud

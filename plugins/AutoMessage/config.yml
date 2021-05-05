@@ -1,0 +1,10 @@
+Messages:
+- ''
+timer: 1800
+Random: false
+UseTellRawMessages: true
+TellRawMessages:
+- '["",{"text":"Click here to check our discord!","color":"blue","underlined":true,"clickEvent":{"action":"open_url","value":"https://discord.gg/hq4YYWRacv"}}]'
+- '["",{"text":"Check our community at: oldbox.cloud !","color":"gold","underlined":false,"clickEvent":{"action":"open_url","value":"https://oldbox.cloud"}}]'
+- '["",{"text":"You can find a guide about the commands, and how to claim and protect
+  your area on our disord.","color":"green","underlined":false,"clickEvent":{"action":"open_url","value":"https://discord.gg/hq4YYWRacv"}}]'

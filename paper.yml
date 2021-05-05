@@ -58,6 +58,9 @@ settings:
     total-multiplier: 0.98
   async-chunks:
     threads: -1
+  console:
+    enable-brigadier-highlighting: true
+    enable-brigadier-completions: true
 messages:
   no-permission: '&cI''m sorry, but you do not have permission to perform this command.
     Please contact the server administrators if you believe that this is in error.'
@@ -221,8 +224,8 @@ world-settings:
     viewdistances:
       no-tick-view-distance: -1
     anti-xray:
-      enabled: false
-      engine-mode: 1
+      enabled: true
+      engine-mode: 2
       max-chunk-section-index: 3
       update-radius: 2
       lava-obscures: false

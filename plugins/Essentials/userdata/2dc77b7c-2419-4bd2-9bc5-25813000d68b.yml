@@ -1,23 +1,25 @@
 lastAccountName: Nezziii
 timestamps:
-  login: 1618512539040
-  logout: 1618514915949
-  lastteleport: 1618513645066
+  login: 1618860997086
+  logout: 1618862874543
+  lastteleport: 1618861042604
+  kits:
+    starters: 1618612020606
 ipAddress: 75.130.254.193
 logoutlocation:
   world: world
-  x: 5394.306989604811
+  x: 5394.619993600121
   y: 67.0
-  z: 7783.0967714081435
-  yaw: 357.97998
-  pitch: 2.7001514
+  z: 7792.080978172675
+  yaw: 233.5825
+  pitch: 16.5
 lastlocation:
   world: world
-  x: -948.2952210734537
-  y: 109.16455858982984
-  z: -556.423921284786
-  yaw: 88.96411
-  pitch: 4.9503803
+  x: 5392.033431391361
+  y: 67.0
+  z: 7796.803344081608
+  yaw: 253.20859
+  pitch: 11.250502
 homes:
   home:
     world: world
@@ -26,4 +28,68 @@ homes:
     z: 7763.699999988079
     yaw: 286.84174
     pitch: 12.225939
+  horses:
+    world: world
+    x: 217.31419403610872
+    y: 64.0
+    z: 243.53075388062663
+    yaw: -158.76593
+    pitch: -2.1697817
+  gravel:
+    world: world
+    x: 1547.7744359262063
+    y: 79.0
+    z: 775.0354587627291
+    yaw: 275.4739
+    pitch: 35.999863
+  lava:
+    world: world
+    x: 356.21972983931266
+    y: 70.0
+    z: 5.818970925231277
+    yaw: 280.27988
+    pitch: 20.929756
+  fortress:
+    world: world_nether
+    x: 37.536115118158
+    y: 59.0
+    z: 208.30000001192093
+    yaw: 4.7051697
+    pitch: 39.900105
+  village:
+    world: world
+    x: 4303.101378649839
+    y: 64.0
+    z: 7362.422665778883
+    yaw: -304.466
+    pitch: 19.200197
+  diamonds:
+    world: world
+    x: 4817.257488842733
+    y: 13.0
+    z: 7803.569174713775
+    yaw: 332.62817
+    pitch: 19.201607
+  zombify:
+    world: world_nether
+    x: 654.9230085052361
+    y: 60.0
+    z: 973.4975313079381
+    yaw: 2.6380615
+    pitch: 14.699324
+  dungeon:
+    world: world
+    x: 1749.4841914660963
+    y: 34.0
+    z: 251.00196856146258
+    yaw: 10.729065
+    pitch: 10.499756
+  temphorse:
+    world: world
+    x: 4680.259822342231
+    y: 63.0
+    z: 7536.377390258457
+    yaw: 200.6698
+    pitch: 39.00033
 godmode: false
+afk: false

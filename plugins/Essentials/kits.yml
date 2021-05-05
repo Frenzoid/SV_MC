@@ -12,9 +12,10 @@
 # For more information, visit http://wiki.ess3.net/wiki/Kits
 kits:
   starters:
-    delay: 10
+    delay: 10000
     items:
     - stonesword 1
     - stoneshovel 1
     - stonepickaxe 1
+    - stoneaxe 1
     - cookedsteak 9

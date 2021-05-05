@@ -1,0 +1,28 @@
+lastAccountName: Dozll
+timestamps:
+  login: 1619312344745
+  logout: 1619313302755
+  lastteleport: 1619313159682
+ipAddress: 76.217.42.68
+lastlocation:
+  world: world
+  x: -3843.9773983573714
+  y: 68.0
+  z: -5096.820336353597
+  yaw: -34.890007
+  pitch: 12.320117
+logoutlocation:
+  world: world
+  x: 5449.404279028584
+  y: 74.0
+  z: 7910.075309429871
+  yaw: -316.72357
+  pitch: 24.558525
+homes:
+  dozll:
+    world: world
+    x: 5450.287434729397
+    y: 74.0
+    z: 7910.220584249372
+    yaw: -176.88171
+    pitch: 23.598185

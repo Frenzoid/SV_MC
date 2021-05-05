@@ -1,0 +1,158 @@
+Treegravity: #by Dudenn
+  General:
+    tgType: 1
+    toolsAllowed:
+    - STONE_AXE
+    - IRON_AXE
+    - GOLDEN_AXE
+    - DIAMOND_AXE
+    - NETHERITE_AXE
+    chopMethod: default
+    updateChecker: true
+    debugger: false
+    defaultUserPerm: true
+    sound: none
+    soundFrequency: 1.0
+    allowedWorlds:
+    - all
+  Lumberjack:
+    houseProtection: 5
+    fairDurability: true
+    durabilityMultiplier: 1.0
+    autoReplant: true
+    saplingDrop: false
+    fallMethod: pop
+    dropMethod: itemdrop
+    randomLogDrop: false
+    LeafDecay:
+      enabled: false
+      speed: 4
+      radius: 2
+  Other:
+    pileSpread: 1
+    mcmmoHook: true
+    mcmmoXpMultiplier: 1.0
+  OreSweeper:
+    enabled: false
+    pickaxesAllowed:
+    - STONE_PICKAXE
+    - IRON_PICKAXE
+    - GOLDEN_PICKAXE
+    - DIAMOND_PICKAXE
+    - NETHERITE_PICKAXE
+  Documentation:
+    #TreeGravity: Info
+    #https://www.spigotmc.org/resources/1-13-treegravity.59283/
+      #CONFIG VARIABLE INFORMATION
+        #GENERAL VARIABLES (apply to all tgTypes; 1,2,3,4)
+          #tgType
+            #desc: Determines which method is enabled, lumberjack [1,2,3] or gravity [4]
+            #
+            #values: [1, 2, 3, or 4] or experimental ones: [2.1, 4.1, 4.2]
+            #  1 = Lumberjack Classic; You break one log on a tree and the entire tree falls down.
+            #      The number of logs the tree has are dropped in a stack at location of the block you broke.
+            #      A sapling is dropped for every 20 logs the tree has.
+            #  2 = Lumberjack Natural; You break one log on a tree and the entire tree falls down.
+            #      Each log on the tree breaks naturally, so the logs will not drop in a uniform fashion
+            #      like they do with LumberJack Classic/Random
+            #  3 = Lumberjack Random; Same logic as LJ Classic, but the number of logs dropped will be
+            #      anywhere from 20% more or less logs the tree actually had.
+            #      So if a tree had 10 logs, anywhere from 8 to 12 will actually be dropped for the player.
+            #  4 = Gravity (experimental); You break a log of a tree and any logs directly above will fall down one block like sand/gravel. Does not work with mushroom trees.
+            #      ## Warning: This method cannot distinguish between logs on a tree and logs placed by a player.
+            #      ## See Update 3.0.0 for a temporary solution (hopefully I'll find a solution eventually)
+            #
+            #  2.1 = Lumberjack Natural; You break one log on a tree and the entire tree falls down. Each LOG AND LEAF on the tree breaks naturally, but as of right now logs and leaves from other trees that are connected will fell too
+            #  4.1 = Gravity (all logs); You break a log of a tree and all logs on the tree will fall down like sand/gravel. Does not work with mushroom trees.
+            #  4.2 = Gravity (all logs AND metadata is set on the logs); You break a log of a tree and all logs on the tree will fall down like sand/gravel. Does not work with mushroom trees.
+            #        ## These gravity methods should be able to distinguish between logs on a tree and logs placed by a player.
+          #toolsAllowed
+            #desc: Tools that allow the aforementioned methods to work on trees, when that tool is used
+            #      to chop a tree. Only add tools in order to avoid any errors.
+            #      You can only add axes with the '/tgconfig tools add' command, but can add any other tools directly here in the config.
+            #
+            #values: [WOODEN_AXE, STONE_AXE, IRON_AXE, GOLDEN_AXE, DIAMOND_AXE], but other tools can be added directly here in the config.
+            #
+          #chopMethod
+            #desc: Adds the ability to require players to sneak/crouch before TreeGravity methods will work.
+            #
+            #values: [default, stand, sneak, or sneak.notify]
+            #  default = The player does not need to explicitly crouch or stand to get TreeGravity methods to work.
+            #            TreeGravity methods will work whether the player is standing or crouching.
+            #  stand = The player needs to stand to get TreeGravity methods to work. There WONT BE notifications
+            #          sent to the player that TreeGravity modes are active when they stand with an axe.
+            #  sneak = The player needs to crouch to get TreeGravity methods to work. There WONT BE notifications
+            #          telling the player TreeGravity modes are active when they crouch with an axe.
+            #  sneak.notify = The player needs to crouch to get TreeGravity methods to work. There WILL BE notifications
+            #          telling the player TreeGravity modes are active when they crouch with an axe.
+            #
+          #updateChecker
+            #desc: Checks whether your version of TreeGravity is the most recent version available.
+            #      If true, the following link is accessed: https://textuploader.com/d7v57/raw
+            #
+            #values: [true or false]
+            #
+          #debugger
+            #desc: When set to true, when you chop down a tree the following will be printed in your server's console:
+            #        -the tree's log type, location, the number of logs the tree has, and your axe's durability.
+            #      Only shows your axe durability when the Gravity method is enabled
+            #
+            #values: [true or false]
+            #
+        #LUMBERJACK VARIABLES (apply for only lumberjack tgTypes; 1,2,3)
+          #houseProtection
+            #desc: Determines how strict the plugin is when determining whether a structure is manmade or a tree, by
+            #      looking at how many of the tree's logs share the same Y value location. If there are too many logs
+            #      sharing the same Y value, the structure is labeled 'manmade', and does not get chopped down.
+            #
+            #      Tip: Many dark oak trees spawn in connected to one another, so you may need to disjoint them first before
+            #      being able to fell the trees.
+            #
+            #      See Update 3.7.0 for more details: https://www.spigotmc.org/resources/1-13-treegravity.59283/update?update=249831
+            #
+            #values: [0, 1, 2, or 3]
+            #  0 = House protection is disabled. The plugin will act without this increased manmade structure protection,
+            #      but will still be generally good at distinguishing houses from trees.
+            #      ## If you use 0, be weary of building houses out of many logs, and using leaves as decoration
+            #      placed directly on the house, as the plugin may think your house is a tree.
+            #  1 = Low House Protection. Can still fell/chop down most trees without any issues, but may fell a
+            #      small house with leaves attached to it.
+            #  2 = Moderate House Protection. Not as stringent as level 3, but not as lax as level 1.
+            #      Is it juuuust right? That's for you to decide.
+            #  3 = Conservative House Protection. The plugin becomes extremely conservative/strict when deciding that
+            #      a structure is a tree. On level 3, trees with a "bottom base" of 4 logs will not fell (the "bottom base"
+            #      being the logs touching the dirt/grass with the lowest Y value). This applies to jungle and dark oak trees, and you
+            #      will need to chop one of the base logs so that there are only 3 on the ground in order to get them to fell.
+            #
+          #fairDurability
+            #desc: Toggles whether your axe durability declines by the amount of logs that are harvested from the tree chopped
+            #      down with Lumberjack methods.
+            #
+            #values: [true or false]
+            #
+          #durabilityMultiplier
+            #desc: The degree of durability damage each log has on your axe/tool. The default config value (1.0) is the vanilla value.
+            #      Changing the value up or down indirectly affects tool life. For example, the life of an iron axe at the following
+            #      values will be: 0.5 = 500 logs; 1.0 = 250 logs; 2.0 = 125 logs; etc.
+            #      ## I DO NOT SUGGEST SETTING THIS MULTIPLIER ABOVE 2 OR 3, as durability is pretty well balanced in vanilla minecraft anyways
+            #
+            #values: [0.5, 1, or 2], but any positive decimal number will work (a negative number will repair your axe)
+            #      With '/tgconfig set durabilitymultiplier' you can set the value within [0 < x < 25].
+            #      You cannot set it higher to 25 or lower than 0 with the command. You can change it to anything you want directly here in the config,
+            #      but is not recommended for survival gameplay. I cannot even recommend setting this value higher than 3.0 in a survival server.
+            #
+          #autoReplant
+            #desc: Toggles whether saplings are replanted automatically once you chop down a tree. If so,
+            #      there is about a 3 second delay before saplings are replanted. Due to the current logic,
+            #      if you chop down a jungle tree from high up, the saplings will replant and then be broken.
+            #
+            #values: [true or false]
+            #
+          #saplingDrop
+            #desc: Drops a stack of saplings immediately with the tree's logs at the base of a tree.
+            #      This setting only applies to the Lumberjack Classic and Random methods.
+            #      The sapling stack will have 1 sapling for every tree, plus an additional sapling for
+            #      every ~18 logs the tree has.
+            #
+            #values: [true or false]
+
